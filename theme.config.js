@@ -22,6 +22,8 @@ export default {
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <meta name="description" content="Omen: The Story driven RPG" />
             <meta name="title" content="Omen: The Story driven RPG" />
+            <meta name="og:description" content="Omen: The Story driven RPG" />
+            <meta name="og:title" content="Omen: The Story driven RPG" />
         </>
     ),
 }
