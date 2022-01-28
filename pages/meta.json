@@ -1,6 +1,8 @@
 {
     "index": "Omen RPG",
     "character-creation": "Character Creation",
+    "actions": "Actions",
+    "skills": "Skills",
     "damage-and-health": "Damage and Health",
     "zones": "Zones"
 }
