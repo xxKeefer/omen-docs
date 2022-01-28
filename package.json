@@ -1,21 +1,41 @@
 {
-  "name": "omen-docs",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:xxKeefer/omen-docs.git",
-  "author": "xxKeefer <xxkeefer.code@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "next": "^12.0.9",
-    "nextra": "^1.1.0",
-    "nextra-theme-docs": "^1.2.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
-  },
-  "devDependencies": {
-    "eslint-plugin-import": "^2.25.2",
-    "eslint-plugin-simple-import-sort": "^7.0.0",
-    "prettier": "2.3.2"
-  }
+    "name": "omen-docs",
+    "version": "1.0.0",
+    "main": "index.js",
+    "repository": "git@github.com:xxKeefer/omen-docs.git",
+    "author": "xxKeefer <xxkeefer.code@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "next": "^12.0.9",
+        "nextra": "^1.1.0",
+        "nextra-theme-docs": "^1.2.6",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "styled-components": "^5.3.3"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^16.1.0",
+        "@commitlint/config-conventional": "^16.0.0",
+        "cz-conventional-changelog": "3.3.0",
+        "eslint-plugin-import": "^2.25.2",
+        "eslint-plugin-simple-import-sort": "^7.0.0",
+        "husky": "^7.0.4",
+        "prettier": "2.3.2",
+        "standard-version": "^9.3.2"
+    },
+    "scripts": {
+        "cm": "git-cz",
+        "cz": "git add .; git cz;",
+        "release": "standard-version"
+    },
+    "husky": {
+        "hooks": {
+            "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+        }
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
 }
