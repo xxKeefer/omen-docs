@@ -24,6 +24,7 @@
         "standard-version": "^9.3.2"
     },
     "scripts": {
+        "start": "next dev",
         "cm": "git-cz",
         "cz": "git add .; git cz;",
         "release": "standard-version"
