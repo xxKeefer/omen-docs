@@ -1,0 +1,10 @@
+{
+    "core":"Core",
+    "power":"Power",
+    "aspects":"Aspects",
+    "omens": "Omens",
+    "consequnces": "Consequences",
+    "actions": "Actions",
+    "skills": "Skills",
+    "enemies": "Enemies"
+}
